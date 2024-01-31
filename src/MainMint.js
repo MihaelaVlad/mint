@@ -43,14 +43,22 @@ const MainMint = ({ accounts, setAccounts }) => {
   };
 
   return (
-    <Flex justify="ccenter" align="flex-start" marginTop="180px" height="100vh">
-      <Box width="570px">
+    <Flex
+      justify="center"
+      align="flex-start"
+      marginTop={{ base: "20px", md: "120px", lg: "150px" }}
+      paddingX="10px"
+    >
+      <Box width="100vw">
         <div>
-          <Text fontSize="48px" textShadow="0 5px #000">
+          <Text
+            fontSize={{ base: "32px", md: "40px", lg: "56px" }}
+            textShadow="0 5px #000"
+          >
             RoboPunks
           </Text>
           <Text
-            fontSize="30px"
+            fontSize={{ base: "22px", md: "30px", lg: "34px" }}
             letterSpacing="-5,5%"
             fontFamily="VT323"
             textShadow="0 2px 2px #000"
@@ -116,8 +124,8 @@ const MainMint = ({ accounts, setAccounts }) => {
             </div>
           ) : (
             <Text
-              marginTop="70px"
-              fontSize="30px"
+              marginTop="20px"
+              fontSize={{ base: "22px", md: "30px", lg: "34px" }}
               letterSpacing="-5.5%"
               fontFamily="VT323"
               textShadow="0 3px #000"
