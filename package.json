@@ -16,6 +16,11 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+    "react-scripts": {
+      "typescript": "^5"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -56,7 +61,6 @@
     "solidity-coverage": "^0.8.2",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
-    "typescript": "^5.3.3",
-    "typescript2": "npm:typescript@^3.9.10"
+    "typescript": "^5.3.3"
   }
 }
