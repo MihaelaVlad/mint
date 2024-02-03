@@ -67,8 +67,8 @@ const MainMint = ({ accounts, setAccounts }) => {
             rampant NFT speculation? Mint Robopunks to find out.
           </Text>
           {isConnected ? (
-            <div>
-              <Flex>
+            <Flex justify="center" align="center" direction="column" gap="12px">
+              <Flex gap="8px">
                 <Button
                   backgroundColor="#fb83f8"
                   borderRadius="5px"
@@ -83,6 +83,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                   -
                 </Button>
                 <Input
+                  backgroundColor="#fb83f890"
                   readOnly
                   fontFamily="inherit"
                   width="100px"
@@ -121,7 +122,7 @@ const MainMint = ({ accounts, setAccounts }) => {
               >
                 Mint Now
               </Button>
-            </div>
+            </Flex>
           ) : (
             <Text
               marginTop="20px"

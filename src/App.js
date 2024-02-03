@@ -3,12 +3,13 @@ import { useState } from "react";
 import MainMint from "./MainMint";
 import NavBar from "./NavBar";
 import videoBackgroundSrc from "./assets/background/cyber-punk.mp4";
+import { Box } from "@chakra-ui/react";
 
 function App() {
   const [accounts, setAccounts] = useState([]);
 
   return (
-    <div className="overlay">
+    <Box className="overlay" overflow={{ base: "scroll", md: "hidden" }}>
       <div className="App">
         <NavBar accounts={accounts} setAccounts={setAccounts}></NavBar>
         <MainMint accounts={accounts} setAccounts={setAccounts}></MainMint>
@@ -19,7 +20,7 @@ function App() {
           <source src={videoBackgroundSrc} type="video/mp4"></source>
         </video>
       </div>
-    </div>
+    </Box>
   );
 }
 
